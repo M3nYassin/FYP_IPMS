@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registration of Geographical Indication</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+form {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+fieldset {
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+legend {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #666;
+}
+
+.checks{
+	display: flex;
+}
+
+input[type="text"],
+textarea,
+.input-file {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="checkbox"],
+input[type="radio"]{
+	padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+
+
+
+textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+.checkbox,
+.radio {
+    margin-bottom: 10px;
+}
+
+.checkbox label,
+.radio label {
+    display: inline-block;
+    margin-right: 20px;
+    font-weight: normal;
+    color: #666;
+}
+
+.checkbox input[type="checkbox"],
+.radio input[type="radio"] {
+    margin-right: 5px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+input[type="date"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+	margin-bottom:20px;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    padding: 5px 5px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    width: 110px; /* Adjust width as needed */
+    margin: 0 10px; /* Add some space between buttons */
+	transition:0.5s ease-in-out;
+}
+
+input[type="reset"] {
+    background-color:  #d72f2f; /* Red color */
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+</style>
+</head>
+<body>
+    <h1>Geographical Indication Form Submission</h1>
+
+
+	<form class="GeographicalForm">
+
+
+<fieldset>
+	<legend class="legends">1. Application Details</legend>
+
+<!-- Applicant Name-->
+	<div class="form-group">
+	  <label class="col-md-4 control-label" for="applicantname">a. Applicant's name</label>
+	  <div class="col-md-4">
+	  <input id="applicantname" name="applicantname" type="text" placeholder="" class="form-control input-md" required="">
+	    
+	  </div>
+	</div>
+
+<!-- Applicant Type-->
+	<div class="form-group">
+	  <label class="col-md-4 control-label" for="applicanttype">b. Applicant type</label> 
+	  <div class="col-md-4">
+	  <input id="applicanttype" name="applicanttype" type="text" placeholder="" class="form-control input-md" required="">
+	    
+	  </div>
+	</div>
+
+<!-- Nationality -->
+	<div class="form-group">
+	  <label class="col-md-4 control-label" for="nationality">c. Country of Establishment/Nationality</label>
+	  <div class="col-md-4">
+	  <input id="nationality" name="nationality" type="text" placeholder="" class="form-control input-md" required="">
+	    
+	  </div>
+	</div>
+
+<br><br>
+
+<!-- Address of the applicant -->
+<fieldset>
+	<legend>d. Address of the Applicant</legend>
+<div class="container">
+	<div class="form-group">
+	  
+	  <small class="form-text text-muted">If the address of the applicant is not within Malaysia, you must also complete section 7</small>
+
+	  </div>
+	</div>
+
+<br><br>
+
+<!-- Postcode -->
+	<div class="form-group">
+	  <label class="col-md-4 control-label" for="postcode">i. Postcode</label> 
+	  <div class="col-md-4">
+	  <input id="postcode" name="postcode" type="text" placeholder="" class="form-control input-md" required="">
+	    
+	  </div>
+	</div>
+
+
+<!-- Town-->
+	<div class="form-group">
+	  <label class="col-md-4 control-label" for="town">ii. Town</label>
+	  <div class="col-md-4">
+	  <input id="town" name="town" type="text" placeholder="" class="form-control input-md" required="">
+	    
+	  </div>
+	</div>
+
+<!-- State/Country -->
+	<div class="form-group">
+	  <label class="col-md-4 control-label" for="state">iii. State/Country</label>
+	  <div class="col-md-4">
+	  <input id="state" name="state" type="text" placeholder="" class="form-control input-md" required="">
+	    
+	  </div>
+	</div>
+
+<!-- Telephone -->
+	<div class="form-group">
+	  <label class="col-md-4 control-label" for="telephone">iv. Telephone</label>
+	  <div class="col-md-4">
+	  <input id="telephone" name="telephone" type="text" placeholder="" class="form-control input-md" required="">
+	    
+	  </div>
+	</div>
+
+<!-- Email -->
+	<div class="form-group">
+	  <label class="col-md-4 control-label" for="email">v. Email</label> 
+	  <div class="col-md-4">
+	  <input id="email" name="email" type="text" placeholder="" class="form-control input-md" required="">
+	    
+	  </div>
+	</div>
+
+<!-- Website -->
+	<div class="form-group">
+	  <label class="col-md-4 control-label" for="website">vi. Website (if any)</label>
+	  <div class="col-md-4">
+	  <input id="website" name="website" type="text" placeholder="" class="form-control input-md" required="">
+	    
+	  </div>
+	</div>
+</fieldset>
+
+<br><br>
+
+<!-- Address for service of the applicant -->
+<div class="container">
+<div class="form-group">
+	  <label class="col-md-4 control-label" for="address">e. Address for Service of the Applicant</label>
+	  </div>
+	</div>
+<br><br>
+
+<!-- Postcode -->
+	<div class="form-group">
+	  <label class="col-md-4 control-label" for="postcodeservice">Postcode</label>  
+	  <div class="col-md-4">
+	  <input id="postcodeservice" name="postcodeservice" type="text" placeholder="" class="form-control input-md" required="">
+	    
+	  </div>
+	</div>
+
+<!-- Town -->
+	<div class="form-group">
+	  <label class="col-md-4 control-label" for="townservice">Town</label>  
+	  <div class="col-md-4">
+	  <input id="townservice" name="townservice" type="text" placeholder="" class="form-control input-md" required="">
+	    
+	  </div>
+	</div>
+
+<!-- State/Country -->
+	<div class="form-group">
+	  <label class="col-md-4 control-label" for="stateservice">State/Country</label>  
+	  <div class="col-md-4">
+	  <input id="stateservice" name="stateservice" type="text" placeholder="" class="form-control input-md" required="">
+	    
+	  </div>
+	</div>
+
+<!-- Representation of the geographical indication -->
+	<div class="form-group">
+	  <label class="col-md-4 control-label" for="representation">Representation of the Geographical Indication</label>  
+	  <div class="col-md-4">
+	  <input id="representation" name="representation" type="text" placeholder="" class="form-control input-md" required="">
+	    
+	  </div>
+	</div>
+</fieldset>
+
+
+<fieldset>
+<legend class="legends">2. Class</legend>
+
+
+<!-- Class --> 
+	  <div class="col-md-4">
+	  <input id="class" name="class" type="text" placeholder="" class="form-control input-md" required="">
+	    
+	  </div>
+	</div>
+</fieldset>
+
+
+<fieldset>
+<legend class="legends">3. List of Goods</legend>
+
+
+<!-- List of goods -->  
+	  <div class="col-md-4">
+	  <input id="listofgoods" name="listofgoods" type="text" placeholder="" class="form-control input-md" required="">
+	    
+	  </div>
+	</div>
+</fieldset>
+
+
+<fieldset>
+<legend class="legends">4. Proof of Protection</legend>
+
+
+<!-- Proof of protection -->
+  <div class="container">
+      <div class="form-group">
+        <label for="date_of_protection">Date of protection:</label>
+        <input type="date" class="form-control" id="date_of_protection" name="date_of_protection">
+      </div>
+      <div class="form-group">
+        <label for="goods_description">Goods related to protection:</label>
+        <textarea class="form-control" id="goods_description" name="goods_description" rows="3"></textarea>
+      </div>
+      <div class="form-group">
+        <label for="supporting_documents">Attach supporting documents:</label>
+        <input type="file" class="form-control-file" id="supporting_documents" name="supporting_documents">
+      </div>
+  </div>
+ </fieldset>
+
+
+<fieldset>
+<legend class="legends">5. The Quality, Reputation or other characteristics of the goods</legend>
+
+
+<!-- The Quality, Reputation or other characteristics of the goods --> 
+  <div class="container">
+  
+      <div class="form-group">
+        <label>Geographical area:</label>
+        <small class="form-text text-muted">Please attach the picture or map of the area.</small>
+        <br><br>
+        <input type="file" class="form-control-file" id="area_picture" name="area_picture">
+      </div>
+
+      <br><br>
+
+      <div class="form-group">
+        <label>Physical characteristics of the goods:</label>
+        <ul>
+          <li><input type="text" class="form-control" placeholder="Colour"></li>
+          <li><input type="text" class="form-control" placeholder="Shape"></li>
+          <li><input type="text" class="form-control" placeholder="Texture"></li>
+          <li><input type="text" class="form-control" placeholder="Size"></li>
+          <li><input type="text" class="form-control" placeholder="Weight"></li>
+          <li><input type="text" class="form-control" placeholder="Taste"></li>
+        </ul>
+      </div>
+
+      <div class="form-group">
+        <label for="proof_of_origin">Proof of origin:</label>
+        <input type="text" class="form-control" id="proof_of_origin" name="proof_of_origin">
+      </div>
+
+      <div class="form-group">
+        <label for="causal_link">Causal link between the geographical area and characteristics:</label>
+        <textarea class="form-control" id="causal_link" name="causal_link" rows="3"></textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="processing_techniques">Specific steps or processing techniques:</label>
+        <textarea class="form-control" id="processing_techniques" name="processing_techniques" rows="3"></textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="labelling_description">Description of labelling:</label>
+        <textarea class="form-control" id="labelling_description" name="labelling_description" rows="3"></textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="award_recognition">Award or recognition:</label>
+        <textarea class="form-control" id="award_recognition" name="award_recognition" rows="3"></textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="inspection_body">Inspection body or authority:</label>
+        <textarea class="form-control" id="inspection_body" name="inspection_body" rows="3"></textarea>
+      </div>
+  </div>
+ </fieldset>
+
+
+<fieldset>
+<legend class="legends">6. Capacity in which the Applicant is filing an application for registration</legend>
+
+
+<!-- Capacity in which the applicant is filing an application for registration -->
+  <div class="container">
+      <div class="form-group">
+        <label>Capacity in which the applicant is filing:</label>
+        <div class="checks">
+          <input type="checkbox" class="form-check-input" id="association" name="association">
+          <label class="form-check-label" for="association">In relation to any applicant who is an association, the name and address of the members of the association</label>
+        </div>
+        <div class="checks">
+          <input type="checkbox" class="form-check-input" id="competent_authority" name="competent_authority">
+          <label class="form-check-label" for="competent_authority">In relation to any applicant who is a competent authority, the name and address of producers under the control of such competent authority</label>
+        </div>
+      </div>
+      <small>Note: Please state the name and address of the person in (a) or (b) on a separate sheet which must be firmly annexed to this form.</small>
+
+      <br><br>
+
+   
+   </div>
+  </fieldset>
+
+  	<div class="button-container">
+		<input type="submit" value="Submit">
+		<input type="reset">
+	</div>
+
+   </form>
+ </body>
+</html>
