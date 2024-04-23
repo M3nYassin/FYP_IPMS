@@ -144,11 +144,131 @@ input[type="reset"]:hover {
 }
 
 
+header {
+    background-color: white;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+.container-nav {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #092044;
+}
+.container-header{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 200px;
+    height: auto;
+    margin: 15px;
+}
+
+h1 {
+    margin: 0;
+}
+
+.search-bar {
+    flex: 1;
+    margin-left: auto;
+    text-align: right;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+}
+
+nav {
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav li {
+    text-align: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.login-btn {
+    background-color: #092044;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.login-btn:hover {
+    background-color: #063366;
+}
+
 
 
 </style>
 </head>
 <body>
+	<header>
+    	<div class="container-header">
+            <img src="logo_20200823.jpg" alt="utkylui" class="logo">
+            <div class="user-actions">
+            <button class="login-btn">Login</button>
+            <div class="search-bar">
+            <input type="text" placeholder="Search">
+            </div>
+        </div>
+        </div>
+        <div class="container-nav">
+            <nav>
+                <ul>
+                    <li><a href="#">Patent</a></li>
+                    <li><a href="#">Trademark</a></li>
+                    <li><a href="#">Industrial Design</a></li>
+                    <li><a href="#">Geographical Indication</a></li>
+                    <li><a href="#">Copyright</a></li>
+                    <li><a href="#">Dashboard</a></li>
+                    <li><a href="#">About Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
 	<h1>Trademark Form Submission</h1>
 	<form class="tradeForm">
 	<fieldset>
