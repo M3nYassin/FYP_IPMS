@@ -190,23 +190,23 @@ body {
 
 
 .wrapper {
-    display: flex;
-    padding-top: 50px;
-    justify-content: center;
+  display: flex;
+  padding-top: 50px;
+  justify-content: center;
 	z-index:0;
-  }
+}
 
-  .collapsible {
-    cursor: pointer;
-    padding: 2%;
-    width: 100%;
-    border: none;
-    text-align:left;
-    outline: none;
-    overflow: hidden;
-    font-size: 15px;
-    justify-content: space-between;
-  }
+.collapsible {
+  cursor: pointer;
+  padding: 2%;
+  width: 100%;
+  border: none;
+  text-align:left;
+  outline: none;
+  overflow: hidden;
+  font-size: 15px;
+  justify-content: space-between;
+}
 
   .collapsible input {
     display: none;
@@ -282,8 +282,10 @@ body {
 }
 @media screen and (max-width: 800px) {
   .sidebar {
-    left: 0;
+    width: 100%;
+    left: -100%;
     z-index: 1000;
+    position: fixed;
   }
   .sidebar.close {
     left: -100%;
@@ -303,5 +305,8 @@ body {
     display: block;
   }
 
+.content {
+        padding-left: 0; 
+    }
   
 }
