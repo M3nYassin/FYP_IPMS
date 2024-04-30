@@ -200,9 +200,14 @@ h1{
 }
 
 /*Report table styling*/
+.table-container {
+  margin-top: 20px;
+}
+
 table {
   border-collapse: collapse; /*ensures borders dont overlap between cells*/
   border: 1px solid #ddd; /*set border style, width and colour */
+  margin-top: 10px;
 }
 
 th, td {
