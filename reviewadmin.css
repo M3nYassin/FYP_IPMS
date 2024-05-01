@@ -10,6 +10,14 @@ body {
   min-height: 100vh;
   background: #eef5fe;
 }
+
+h1 {
+  text-align: center;
+  color: #1c1c6b;
+  margin-top: 50px;
+  
+}
+
 /* Pre css */
 .flex {
   display: flex;
@@ -194,6 +202,7 @@ body {
   padding-top: 50px;
   justify-content: center;
 	z-index:0;
+  margin-left: 18%;
 }
 
 .collapsible {
@@ -305,8 +314,11 @@ body {
     display: block;
   }
 
-.content {
-        padding-left: 0; 
-    }
+  .content {
+    position: relative;
+    left: 0;
+    width: calc(100% - 270px);
+    margin-left: 270px; 
+  }
   
 }
