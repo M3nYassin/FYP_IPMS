@@ -289,7 +289,7 @@ nav a {
 
 
 	<div class="form-group">
-	   <label class="col-md-4 control-label" for="address">d. Address of the applicant</label>
+	   <label class="col-md-4 control-label" for="address">d. Address of the applicant (in Malaysia)</label>
 	  </div>
 	</div>
 
@@ -408,10 +408,10 @@ nav a {
 	  <small class="form-text text-muted">Please indicate:</small><br><br>
 	  <label class="col-md-4 control-label" for="earlygi">i. The representation of the earlier geographical indication</label> 
 	  <div class="col-md-4">
-	  <input id="email" name="email" type="text" placeholder="" class="form-control input-md" required="">
+	  <input id="earlygi" name="earlygi" type="text" placeholder="" class="form-control input-md" required="">
 	  <label class="col-md-4 control-label" for="email">ii. The registration number or the application number of that earlier geographical indication:</label> 
 	  <div class="col-md-4">
-	  <input id="registration" name="registration" type="text" placeholder="" class="form-control input-md" required="">
+	  <input id="email" name="email" type="text" placeholder="" class="form-control input-md" required="">
   </fieldset>
 
 
@@ -492,12 +492,10 @@ nav a {
 </fieldset>
 
 
+<!-- Proof of protection -->
 <fieldset>
 <legend class="legends">4. Proof of Protection</legend>
 
-
-<!-- Proof of protection -->
- 
       <div class="form-group">
         <label for="date_of_protection">Date of protection:</label>
         <input type="date" class="form-control" id="date_of_protection" name="date_of_protection">
@@ -514,11 +512,11 @@ nav a {
  </fieldset>
 
 
+<!-- The Quality, Reputation or other characteristics of the goods --> 
+
 <fieldset>
 <legend class="legends">5. The Quality, Reputation or other characteristics of the goods</legend>
 
-
-<!-- The Quality, Reputation or other characteristics of the goods --> 
   
       <div class="form-group">
         <label>Geographical area:</label>
@@ -574,11 +572,13 @@ nav a {
  </fieldset>
 
 
+<!-- Capacity in which the applicant is filing an application for registration -->
+
 <fieldset>
 <legend class="legends">6. Capacity in which the applicant is filing an application for registration</legend>
 
 
-<!-- Capacity in which the applicant is filing an application for registration -->
+
       <div class="form-group">
         <label>Capacity in which the applicant is filing:</label>
         <div class="checks">
@@ -594,9 +594,15 @@ nav a {
 
       <br><br>
 
+      	<div class="form-group">
+        <label for="supporting_documents">Additional attachments:</label>
+        <input type="file" class="form-control-file" id="supporting_documents" name="supporting_documents">
+      </div>
+
    
    </div>
   </fieldset>
+
 
   	<div class="button-container">
 		<input type="submit" value="Submit">
