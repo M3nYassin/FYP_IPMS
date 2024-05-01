@@ -183,16 +183,19 @@ body {
 }
 .navbar img {
   height: 40px;
-  width: 40px;
+  width: 40px;3
   margin-left: 20px;
 }
 
 h1{
-  margin-left:20%;
+  text-align: center;
+  margin-top:50px;
+  color: #1c1c6b;
 }
 
 .content {
   margin-left: 20%;
+  margin-right: 50px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -200,9 +203,14 @@ h1{
 }
 
 /*Report table styling*/
+.table-container {
+  margin-top: 20px;
+}
+
 table {
   border-collapse: collapse; /*ensures borders dont overlap between cells*/
   border: 1px solid #ddd; /*set border style, width and colour */
+  margin-top: 10px;
 }
 
 th, td {
